@@ -1,0 +1,21 @@
+.contenedor {
+    background-color: #1d75de;
+    padding: 15px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-items: center;
+    font-size: 12px;
+    color: #fff;
+    text-decoration: underline;
+}
+
+.encabezado{
+    margin: 0 auto;
+    padding: 0 15px;
+    background-color: #000;
+}
+
+.listado{
+    font-size: 16px;
+    color: #fff;
+}
