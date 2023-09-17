@@ -18,4 +18,39 @@
 .listado{
     font-size: 16px;
     color: #fff;
+    display: inline-block;
+    line-height: inherit;
+    list-style: none;
+}
+
+.navegacion{
+    display: inline-block;
+}
+
+.contenedor_main{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left:50px;
+    padding-right: 80px;
+    font-size: 16px;
+    color: #222326;
+}
+
+.sub_navegacion{
+    padding: 15px 0 30px;
+    line-height: 1.5;
+}
+
+.listado2{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.item{
+    font-size: 16px;
+    font-weight: 500;
+    padding: .3em 0;
+    margin: .5em;
+    display: inline-block;
 }
