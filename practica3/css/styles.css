@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.nav_menu{
+    width: 100%;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.logo{
+    font-size: 2.1em;
+    display: inline-block;
+}
+
+.nav_menu ul {
+    display: inline;
+    margin-left: auto;
+}
+
+.nav_menu ul li {
+    display: inline;
+}
+
+.nav_menu ul li a {
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 10px;
+    display: inline-block;
+    font-size: 1.2em;
+    color: #eee;
+}
+
+.bg-image{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background: url("https://picsum.photos/id/16/2500/1667");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-contenido{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    position: relative;
+    top: 45vh;
+}
+
+.fila{
+    width: 100%;
+    padding: 1em;
+}
+
+.image-container{
+    width: 80%;
+}
+
+.image-container img{
+    width: 100%;
+}
