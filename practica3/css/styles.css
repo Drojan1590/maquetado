@@ -9,7 +9,32 @@ body{
     color: white;
 }
 
+.bodyRow {
+    width: 100%;
+    padding: 1em;
+}
+
+.separator {
+    width: 100%;
+    border-bottom: 8px solid #222;
+}
+
+.image-container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.image-container img{
+    width: 100%;
+}
+
+.text-container{
+    text-align: center;
+    padding: 2rem;
+}
+
 .nav_menu{
+    display: block;
     width: 100%;
     background-color: #333;
     position: fixed;
@@ -18,8 +43,10 @@ body{
 }
 
 .logo{
-    font-size: 2.1em;
+    font-size: 2.2em;
     display: inline-block;
+    padding: 0 1em;
+    /*width: 50%;*/
 }
 
 .nav_menu ul {
@@ -40,6 +67,11 @@ body{
     color: #eee;
 }
 
+.nav_menu li:hover a{
+    background-color: #444;
+}
+
+
 .bg-image{
     height: 100vh;
     width: 100%;
@@ -48,9 +80,11 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-blend-mode: multiply;
 }
 
 .hero-contenido{
+    position: relative;
     text-align: center;
     width: 60%;
     margin: 0 auto;
@@ -58,15 +92,150 @@ body{
     top: 45vh;
 }
 
-.fila{
-    width: 100%;
-    padding: 1em;
+.hero-contenido h1{
+    font-size: 4rem;
 }
 
-.image-container{
-    width: 80%;
+.hero-contenido h2{
+    font-size: 2rem;
+    margin: 1em 0;
 }
 
-.image-container img{
-    width: 100%;
+.hero-contenido p {
+    font-size: 1.5rem;
+    margin: 1em 0;
 }
+
+.btn {
+    width: 150px;
+    text-align: center;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    padding: 1em 1.3em;
+    background: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    transition: all 400ms ease;
+}
+
+.btn:hover,
+.btn:focus {
+        border-color: #cb72aa;
+        color: #fff;
+}
+
+.fill:hover,
+.fill:focus {
+        box-shadow: inset 0 0 0 2em #cb72aa;
+}
+
+main{
+    margin-top: 1em;
+}
+
+footer{
+    width: 100%;
+    text-align: center;
+    background-color: #333;
+    padding: 3rem;
+    font-size: 2rem;
+}
+
+@media screen and (max-width: 360px ) {
+    .hero-contenido{
+        position: relative;
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+        position: relative;
+        top: 60vh;
+    }
+    
+    .hero-contenido h1{
+        font-size: 1rem;
+    }
+    
+    .hero-contenido h2{
+        font-size: .8rem;
+        margin: 1em 0;
+    }
+    
+    .hero-contenido p {
+        font-size: .8rem;
+        margin: 1em 0;
+    }
+    
+    .nav_menu{
+        display: block;
+        width: 100%;
+        background-color: #333;
+        /*position: fixed;*/
+        top: 0;
+        z-index: 5;
+    }
+
+    .nav_menu ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 590px ) {
+    .hero-contenido{
+        position: relative;
+        text-align: center;
+        width: 70%;
+        margin: 0 auto;
+        position: relative;
+        top: 55vh;
+    }
+    
+    .hero-contenido h1{
+        font-size: 3rem;
+    }
+    
+    .hero-contenido h2{
+        font-size: 1rem;
+        margin: 1em 0;
+    }
+    
+    .hero-contenido p {
+        font-size: 1rem;
+        margin: 1em 0;
+    }
+    
+}
+
+@media screen and (min-width: 960px) {
+.bodyRow {
+    max-height: 600px;
+    overflow: hidden;
+    }
+
+    .imageContainer,
+    .text-container {
+        width: 50%;
+        float: left;
+        }
+
+    .imageContainer img {
+        width: 100%;
+        max-height: 350px;
+        object-fit: contain;
+        }
+  
+    .text-container {
+            /* width: 80%; */
+        padding: 2rem;
+        position: relative;
+        top: 125px;
+        text-align: left;
+        }
+  
+    .logo {
+        width: 70%;
+        }
+} 
+
+
